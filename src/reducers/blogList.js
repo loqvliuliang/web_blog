@@ -58,10 +58,12 @@ const requestGetBlogList = () => dispatch => {
   dispatch(startGetBlogList())
 
   return axios
-    .get(`${apiPrefix}/blogs?${blogListQs}`)
-    .then(response => {
-      const { blogs, count } = response.data.data
+    .get(`${apiPrefix}/blogs/get/by/input`)
+    .then(res => {
+      console.log(res.data);
+      const { blogs, count } = res.data.data
       dispatch(successGetBlogList(blogs, count))
+      console.log("123");
       return 'success'
     })
     .catch(error => {

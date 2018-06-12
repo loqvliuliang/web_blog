@@ -27,6 +27,7 @@ class Blog extends Component {
       return <PointOutContent text="数据加载失败，请刷新页面重试" />
     }
 
+
     return (
       <Styled.BlogContainer>
         <Styled.InfoContainer>
@@ -57,7 +58,7 @@ class Blog extends Component {
         <Styled.BlogContent className={'markdown-body'}>
           <div
             dangerouslySetInnerHTML={{
-              __html: blog.htmlContent
+              __html: blog.markdownContent
             }}
           />
         </Styled.BlogContent>

@@ -51,9 +51,9 @@ const requestGetResume = () => dispatch => {
   dispatch(startGetResume())
 
   return axios
-    .get(`${apiPrefix}/resumes`)
+    .get(`${apiPrefix}/blogs/1006375577468710913`)
     .then(response => {
-      const { htmlContent } = response.data.data
+      const { htmlContent } = response.data
       dispatch(successGetResume(htmlContent))
       return 'success'
     })

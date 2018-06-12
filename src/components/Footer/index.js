@@ -18,7 +18,7 @@ const StyledFooter = Styled.div`
 
 const Footer = () => (
   <StyledFooter>
-    @2018&nbsp;&nbsp;<i className="far fa-user-circle" />&nbsp;ZALE
+    @2018&nbsp;&nbsp;<i className="far fa-user-circle" />&nbsp;crawler
   </StyledFooter>
 )
 

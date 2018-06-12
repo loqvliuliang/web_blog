@@ -92,15 +92,11 @@ const StyledSocialMedia = styled.div`
 
 const SocialMedia = () => (
   <StyledSocialMedia>
-    <a href="https://github.com/zaleGZL">
+    <a href="https://github.com/loqvliuliang/cralwer">
       <i className="fab fa-github" />
     </a>
-    <a href="https://weibo.com/5723678128/profile">
-      <i className="fab fa-weibo" />
-    </a>
-    <a href="https://www.linkedin.com/in/%E6%B3%BD%E5%87%8C-%E9%83%AD-8776a913b/">
-      <i className="fab fa-linkedin-in" />
-    </a>
+
+    <a href="http://www.iamcrawler.cn:4000" >购物商城</a>
   </StyledSocialMedia>
 )
 
@@ -115,9 +111,9 @@ class ProfileCard extends React.Component {
         <StyledImgContainer>
           <img src={img} alt="duck" />
         </StyledImgContainer>
-        <StyledName>ZALE</StyledName>
+        <StyledName>crawler</StyledName>
         <StyledDescription>
-          Keep growing, fuck everything else.
+            To be a steady crawler
         </StyledDescription>
         <StyledInfoContainer>
           <StyledInfo>

@@ -55,7 +55,7 @@ const requestGetBlog = id => dispatch => {
   return axios
     .get(`${apiPrefix}/blogs/${id}`)
     .then(response => {
-      const blog = response.data.data
+      const blog = response.data
       dispatch(successGetBlog(blog))
       return 'success'
     })

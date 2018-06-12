@@ -59,14 +59,15 @@ class BlogList extends React.Component {
     const listStartIndex = (currentPage - 1) * blogListPerPageCount
     const listEndIndex = listStartIndex + blogListPerPageCount
     const listData = blogList.slice(listStartIndex, listEndIndex)
+    console.log(listData);
 
     // 博客列表组件
     const list = listData.map(item => (
-      <Styled.Container key={item._id}>
+      <Styled.Container key={item.id}>
         <Styled.Title>
           <a
-            href={`/blogs/${item._id}`}
-            onClick={e => this.onTitleClick(e, item._id)}
+            href={`/blogs/${item.id}`}
+            onClick={e => this.onTitleClick(e, item.id)}
           >
             {item.title}
           </a>
