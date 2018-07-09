@@ -1,10 +1,10 @@
 # 博客前台
 
-项目地址: [https://github.com/zaleGZL/zalegzl-website](https://github.com/zaleGZL/zalegzl-website)
+项目地址: http://www.iamcrawler.cn
 
 如果你觉得项目不错的话，欢迎点击右上角 'star' 支持下，万分感谢! ~\(≧▽≦)/~
 
-线上地址: [http://guozeling.cn/blogs](http://guozeling.cn/blogs)
+线上地址: https://github.com/iamcrawler/web_blog
 
 ## 前言
 
@@ -25,11 +25,9 @@
 
 ### 后端
 
-- koa
+- springboot
 
-博客的后端是使用 Node.js 开发的，是基于 koa 并采用了 Restful API 架构实现的，完美实现前后端的分离，后端只需要负责提供数据，而路由的跳转、数据渲染都是由前端实现。
-
-项目地址: [https://github.com/zaleGZL/zalegzl-website-server](https://github.com/zaleGZL/zalegzl-website-server)
+项目地址: 
 
 ## 实现的功能
 
@@ -39,7 +37,7 @@
 - [x] 博客的分类和标签
 - [x] 返回顶部
 - [x] 响应式
-- [x] 关于页面(目前用于放简历，本人大三，求实习中...)
+- [x] 关于页面
 
 ## TODO
 
@@ -52,11 +50,11 @@
 
 #### 首页
 
-![blog_home](http://p3ek8rd7p.bkt.clouddn.com/blog_home.jpg)
+
 
 #### 博客详情页
 
-![http://p3ek8rd7p.bkt.clouddn.com/blog_page.jpg](http://p3ek8rd7p.bkt.clouddn.com/blog_page.jpg)
+
 
 
 ## 项目总结
