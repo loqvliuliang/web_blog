@@ -8,6 +8,8 @@ import ContentLoader from '../ContentLoader'
 import PointOutContent from '../PointOutContent'
 import Tag from '../Tag'
 import './markdown.css'
+import CommentApp from '../../comment/CommentApp'
+
 
 class Blog extends Component {
   componentDidMount() {
@@ -26,7 +28,6 @@ class Blog extends Component {
     } else if (status === 'failure') {
       return <PointOutContent text="数据加载失败，请刷新页面重试" />
     }
-
 
     return (
       <Styled.BlogContainer>
@@ -62,8 +63,11 @@ class Blog extends Component {
             }}
           />
         </Styled.BlogContent>
+        <CommentApp />
       </Styled.BlogContainer>
+
     )
+
   }
 }
 

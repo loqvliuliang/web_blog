@@ -21,9 +21,9 @@ const App = () => (
   <Router>
     <div>
       <TopNav navList={navList} />
-      <Container lrPadding={0} style={{ marginTop: '30px' }}>
+      <Container lrPadding={0} style={{ marginTop: '30px'  }}>
         <Grid.Row>
-          <Grid.Col xs={12} sm={12} md={12} lg={8.5} xl={9}>
+          <Grid.Col xs={16} sm={12} md={12} lg={8.5} xl={9}>
             <Switch>
               <Route exact path="/" component={BlogList} />
               <Route exact path="/blogs" component={BlogList} />
@@ -34,7 +34,7 @@ const App = () => (
               <Route component={NotFoundContent} />
             </Switch>
           </Grid.Col>
-          <Grid.Col xs={0} sm={0} md={0} lg={3.5} xl={3}>
+          <Grid.Col xs={0} sm={0} md={0} lg={3} xl={3}>
             <ProfileCard />
             <Route path="/blogs/:blogId" component={ArticleDirectory} />
           </Grid.Col>
